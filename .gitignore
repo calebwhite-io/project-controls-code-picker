@@ -1,0 +1,9 @@
+# Generated deployment output
+_site/
+
+# Generated browser verification images
+tests/artifacts/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db

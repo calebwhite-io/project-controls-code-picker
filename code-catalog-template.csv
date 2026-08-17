@@ -1,0 +1,2 @@
+code,name,description,fund,phase,discipline,cost_type,keywords,active,requires_review,review_note
+YOUR-CODE,Replace with approved code,"Replace with the controlled catalog description",base-capital,4-installation,electrical,equipment,"generator;switchgear;UPS",true,true,"Replace with the approval rule or leave blank"
