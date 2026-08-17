@@ -12,9 +12,11 @@ test('GitHub Pages workflow tests and deploys only the static showcase files', (
   assert.match(workflow, /push:\s*\n\s*branches:\s*\[main\]/);
   assert.match(workflow, /workflow_dispatch:/);
   assert.match(workflow, /node --test/);
-  assert.match(workflow, /actions\/configure-pages@v5/);
-  assert.match(workflow, /actions\/upload-pages-artifact@v3/);
-  assert.match(workflow, /actions\/deploy-pages@v4/);
+  assert.match(workflow, /actions\/checkout@v7/);
+  assert.match(workflow, /actions\/setup-node@v7/);
+  assert.match(workflow, /actions\/configure-pages@v6/);
+  assert.match(workflow, /actions\/upload-pages-artifact@v5/);
+  assert.match(workflow, /actions\/deploy-pages@v5/);
   assert.match(workflow, /mkdir -p _site/);
   for (const file of [
     'index.html',
